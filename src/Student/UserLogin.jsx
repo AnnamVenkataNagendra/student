@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { userContext } from './StudentToken';
 import { Link, useNavigate } from 'react-router-dom';
 import BackendAi from '../BackEndApi/FrontEndApi'
-const Student = () => {
+const UserLogin = () => {
 
    const [getName, setName]=useState({
     stuName:"",
@@ -87,4 +87,4 @@ const navigate=useNavigate();
   )
 }
 
-export default Student
+export default UserLogin

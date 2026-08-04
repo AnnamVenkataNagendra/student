@@ -1,19 +1,19 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Student from './Student'
-import DashBoard from './DashBoard'
-import StudentDetails from './StudentDetails'
-import StudentLoginForm from './StudentLoginForm'
+
+import UserLogin from './UserLogin'
+import UserData from './UserData'
+import UserRegister from './UserRegister'
 
 const App1 = () => {
   return (
     <div>
      
      <Routes>
-        <Route path='/' element={<Student/>}/>
+        <Route path='/' element={<UserLogin/>}/>
         <Route path='/dashboard' element={<DashBoard/>}/>
-        <Route path='/fetch' element={<StudentDetails/>}/>
-        <Route path='/post' element={<StudentLoginForm/>}/>
+        <Route path='/fetch' element={<UserData/>}/>
+        <Route path='/post' element={<UserRegister/>}/>
      </Routes>
 
     </div>

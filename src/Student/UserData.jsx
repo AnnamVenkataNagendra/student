@@ -3,7 +3,7 @@ import StudentData from './StudentData';
 import { Link } from 'react-router-dom';
 
 import BackendApi from '../BackEndApi/FrontEndApi';
-const StudentDetails = () => {
+const UserData = () => {
 
 
     const [getData,setData]=useState([]);
@@ -55,4 +55,4 @@ const StudentDetails = () => {
   )
 }
 
-export default StudentDetails
+export default UserData

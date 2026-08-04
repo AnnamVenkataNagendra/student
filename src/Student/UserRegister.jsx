@@ -4,7 +4,7 @@ import StudentData from './StudentData';
 import { Link } from 'react-router-dom';
 
 import BackendApi from '../BackEndApi/FrontEndApi'
-const StudentLoginForm = () => {
+const UserRegister = () => {
 
     const [getName,setName]=useState({stuName:" ", stuPass:""})
 
@@ -53,4 +53,4 @@ const StudentLoginForm = () => {
   )
 }
 
-export default StudentLoginForm
+export default UserRegister

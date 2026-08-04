@@ -12,7 +12,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
    <BrowserRouter>
     <StudentToken>
-      <App1 />
+      <App1/>
     </StudentToken>
    </BrowserRouter>
   </StrictMode>,

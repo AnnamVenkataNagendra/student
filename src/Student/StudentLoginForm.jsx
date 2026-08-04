@@ -43,7 +43,7 @@ const StudentLoginForm = () => {
 
             <dt>User Password:</dt>
             <dd><input type='password' className='form-control w-50 mx-auto'  value={getName.stuPass} onChange={(event)=>{setName({...getName, stuPass: event.target.value})}} required/></dd>
-            <button className='btn btn-danger w-50'>Register</button>
+            <button className='btn btn-danger w-50' type='submit'>Register</button>
             <p className={getSuccess==true? 'text-success' : 'text-danger'}>{getMsg}</p> 
           </dl>
            <Link to='/'>

@@ -53,12 +53,17 @@ const navigate=useNavigate();
 
             <dt>User Password:</dt>
             <dd><input type='password' className='form-control w-50 mx-auto'  value={getName.stuPass} onChange={(event)=>{setName({...getName, stuPass: event.target.value})}}/></dd>
-            <button className='btn btn-danger w-50'>Login</button>
-            <h6 className='text-primary mt-3 ms-3 m-4'>New User?
-            </h6>
+              <button type="submit" className="btn btn-danger w-50">
+                   Login
+                   </button>           
+             <h6 className='text-primary mt-3 ms-3 m-4'>New User?</h6>
               <p className={getSuccess==true? 'text-success' : 'text-danger'}>{getMsg}</p> 
-              <Link to='/post'>
-         <button className='btn btn-primary mt-4 ms-4'>Login User?</button></Link>         
+
+             <div className="mt-3">
+               <Link to="/post" className="btn btn-primary">
+                    Create Account
+                    </Link>
+                   </div>    
           </dl>
         
     </div>

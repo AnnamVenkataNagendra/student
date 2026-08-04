@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import UserLogin from './UserLogin'
 import UserData from './UserData'
 import UserRegister from './UserRegister'
-import DashBoard from './DashBoard'
+import DashBoard from "./Student/DashBoard";
 
 const App1 = () => {
   return (

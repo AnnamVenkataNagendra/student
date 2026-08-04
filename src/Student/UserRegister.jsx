@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react'
-import StudentData from './StudentData';
 import { Link } from 'react-router-dom';
 
 import BackendApi from '../BackEndApi/FrontEndApi.jsx'

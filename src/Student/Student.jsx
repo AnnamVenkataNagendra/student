@@ -25,7 +25,6 @@ const navigate=useNavigate();
      StudentClass.login(getName)
      .then(req=>{
         console.log(req.data)
-        alert("User login Success")
         login(req.data)
         navigate("/dashboard")
         setName({

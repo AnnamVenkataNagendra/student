@@ -10,6 +10,10 @@ const Student = () => {
     stuPass:""
 })
 
+  const [getSuccess, setSuccess]=useState(false);
+
+    const [getMsg,setMsg]=useState('')
+
 const {login}=userContext()
 
 const navigate=useNavigate();
@@ -28,9 +32,13 @@ const navigate=useNavigate();
             stuName:"",
             stuPass:""
         })
+         setSuccess(true);
+        setMsg("Registration Successful!")
      }).catch(error=>{
         console.log(error);
         alert("Login faild")
+         setMsg("User register failed")
+        setSuccess(false);
      })
 
 
@@ -50,6 +58,7 @@ const navigate=useNavigate();
             <button className='btn btn-danger w-50'>Login</button>
             <h6 className='text-primary mt-3 ms-3 m-4'>New User?
             </h6>
+                        <p className={getSuccess==true? 'text-success' : 'text-danger'}>{getMsg}</p> 
             <Link to='/post'>Create Account</Link>
           </dl>
         

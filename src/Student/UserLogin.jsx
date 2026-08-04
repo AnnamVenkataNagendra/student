@@ -26,7 +26,6 @@ const navigate=useNavigate();
      .then(req=>{
         console.log(req.data)
         login(req.data)
-        navigate("/dashboard")
         setName({
             stuName:"",
             stuPass:""

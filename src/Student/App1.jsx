@@ -4,15 +4,12 @@ import { Route, Routes } from 'react-router-dom'
 import UserLogin from './UserLogin'
 import UserData from './UserData'
 import UserRegister from './UserRegister'
-import DashBoard from "./Student/DashBoard";
-
 const App1 = () => {
   return (
     <div>
      
      <Routes>
         <Route path='/' element={<UserLogin/>}/>
-        <Route path='/dashboard' element={<DashBoard/>}/>
         <Route path='/fetch' element={<UserData/>}/>
         <Route path='/post' element={<UserRegister/>}/>
      </Routes>

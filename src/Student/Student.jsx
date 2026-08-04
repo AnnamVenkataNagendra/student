@@ -53,17 +53,25 @@ const navigate=useNavigate();
     <div className="mb-3">
       <label>User Name</label>
       <input
-        type="text"
-        className="form-control"
-      />
+    type="text"
+    className="form-control"
+    value={getName.stuName}
+    onChange={(e) =>
+        setName({ ...getName, stuName: e.target.value })
+    }
+/>
     </div>
 
     <div className="mb-3">
       <label>Password</label>
       <input
-        type="password"
-        className="form-control"
-      />
+    type="password"
+    className="form-control"
+    value={getName.stuPass}
+    onChange={(e) =>
+        setName({ ...getName, stuPass: e.target.value })
+    }
+/>
     </div>
 
     <button type="submit" className="btn btn-danger">

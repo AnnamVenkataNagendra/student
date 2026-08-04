@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Student from './Student'
 import DashBoard from './DashBoard'
 import StudentDetails from './StudentDetails'
+import StudentLoginForm from './StudentLoginForm'
 
 const App1 = () => {
   return (
@@ -12,6 +13,7 @@ const App1 = () => {
         <Route path='/' element={<Student/>}/>
         <Route path='/dashboard' element={<DashBoard/>}/>
         <Route path='/fetch' element={<StudentDetails/>}/>
+        <Route path='/post' element={<StudentLoginForm/>}/>
      </Routes>
 
     </div>

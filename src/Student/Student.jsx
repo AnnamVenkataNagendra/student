@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import StudentClass from './StudentClass';
 import { userContext } from './StudentToken';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 const Student = () => {
 
    const [getName, setName]=useState({
@@ -48,6 +48,9 @@ const navigate=useNavigate();
             <dt>User Password:</dt>
             <dd><input type='password' className='form-control w-50 mx-auto'  value={getName.stuPass} onChange={(event)=>{setName({...getName, stuPass: event.target.value})}}/></dd>
             <button className='btn btn-danger w-50'>Login</button>
+            <h6 className='text-primary mt-3 ms-3 m-4'>New User?
+            </h6>
+            <Link to='/post'>Create Account</Link>
           </dl>
         
     </div>

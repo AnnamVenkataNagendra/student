@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 
-const API_URL ="http://localhost:8080/stu" 
+const API_URL ="https://spring-5ecn.onrender.com/stu" 
 
 class  StudentData {
   
@@ -14,6 +14,10 @@ class  StudentData {
 
     retrive(){
         return axios.get(`${API_URL}/fetch`);
+    }
+
+    post(data){
+        return axios.post(`${API_URL}/post`,data);
     }
 }
 

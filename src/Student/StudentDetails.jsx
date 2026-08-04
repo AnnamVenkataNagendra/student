@@ -48,8 +48,6 @@ const StudentDetails = () => {
   <Link to='/dashboard'>
  <button className='btn btn-primary mt-4 ms-4'>Dash Board Page</button></Link>
     </table>
-
-    
     
   </div>
   </div>

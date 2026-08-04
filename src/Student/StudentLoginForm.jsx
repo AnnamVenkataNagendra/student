@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react'
-import StudentClass from './StudentClass';
+import StudentData from './StudentData';
 import { Link } from 'react-router-dom';
 
 const StudentLoginForm = () => {
@@ -14,8 +14,7 @@ const StudentLoginForm = () => {
     const handelLogin=(e)=>{
         
      e.preventDefault();
-
-     StudentClass.post(getName)
+     StudentData.post(getName)
      .then(req=>{
         console.log(req.data)
         setName({

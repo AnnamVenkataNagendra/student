@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import StudentClass from './StudentClass';
+import StudentData from './StudentData';
 import { Link } from 'react-router-dom';
 
 const StudentDetails = () => {
@@ -8,7 +8,7 @@ const StudentDetails = () => {
     const [getData,setData]=useState([]);
 
     useEffect(()=>{
-        StudentClass.retrive()
+        StudentData.retrive()
         .then(res=>{
             setData(res.data);
         }).catch(error=> console.log(error))

@@ -57,7 +57,7 @@ const navigate=useNavigate();
             <h6 className='text-primary mt-3 ms-3 m-4'>New User?
             </h6>
               <p className={getSuccess==true? 'text-success' : 'text-danger'}>{getMsg}</p> 
-              <Link to='/'>
+              <Link to='/post'>
          <button className='btn btn-primary mt-4 ms-4'>Login User?</button></Link>         
           </dl>
         

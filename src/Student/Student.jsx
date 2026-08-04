@@ -58,14 +58,13 @@ const navigate=useNavigate();
                    </button>           
              <h6 className='text-primary mt-3 ms-3 m-4'>New User?</h6>
               <p className={getSuccess==true? 'text-success' : 'text-danger'}>{getMsg}</p> 
-
              <div className="mt-3">
                <Link to="/post" className="btn btn-primary">
                     Create Account
                     </Link>
                    </div>    
           </dl>
-        
+        <p> Venkat</p>
     </div>
   </form>
   )

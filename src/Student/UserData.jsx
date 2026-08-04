@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react'
 import StudentData from './StudentData';
 import { Link } from 'react-router-dom';
 
+import BackendApi from '../BackEndApi/FrontEndApi';
 const StudentDetails = () => {
 
 
     const [getData,setData]=useState([]);
 
     useEffect(()=>{
-        StudentData.retrive()
+       BackendApi.retrive()
         .then(res=>{
             setData(res.data);
         }).catch(error=> console.log(error))

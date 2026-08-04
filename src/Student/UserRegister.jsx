@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import StudentData from './StudentData';
 import { Link } from 'react-router-dom';
 
+import BackendApi from '../BackEndApi/FrontEndApi'
 const StudentLoginForm = () => {
 
     const [getName,setName]=useState({stuName:" ", stuPass:""})
@@ -14,7 +15,7 @@ const StudentLoginForm = () => {
     const handelLogin=(e)=>{
         
      e.preventDefault();
-     StudentData.post(getName)
+     BackendApi.post(getName)
      .then(req=>{
         console.log(req.data)
         setName({

@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react'
-import StudentClass from './StudentClass';
 import { userContext } from './StudentToken';
 import { Link, useNavigate } from 'react-router-dom';
+import BackendAi from '../BackEndApi/FrontEndApi'
 const Student = () => {
 
    const [getName, setName]=useState({
@@ -22,7 +22,7 @@ const navigate=useNavigate();
         
      e.preventDefault();
 
-     StudentClass.login(getName)
+   BackendAi.login(getName)
      .then(req=>{
         console.log(req.data)
         login(req.data)

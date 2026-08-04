@@ -1,11 +1,12 @@
+import React from 'react'
 
+import axios from 'axios';
 
-    import axios from 'axios';
+ const API_URL = "https://spring-6ko4.onrender.com/stu";
 
-    const API_URL = "https://spring-6ko4.onrender.com/stu";
-    class  StudentData {
-    
-        login(data){
+class BackendApi {
+
+      login(data){
 
             return axios.post(`${API_URL}/login`,data);
 
@@ -18,6 +19,7 @@
         post(data){
             return axios.post(`${API_URL}/post`,data);
         }
-    }
+ 
+}
 
-    export default new StudentData();
+export default new BackendApi();

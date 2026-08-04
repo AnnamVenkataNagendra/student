@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import StudentData from './StudentData';
 import { Link } from 'react-router-dom';
 
-import BackendApi from '../BackEndApi/FrontEndApi';
+import BackendApi from '../BackEndApi/FrontEndApi.jsx';
 const UserData = () => {
 
 

@@ -45,8 +45,6 @@ const UserData = () => {
 
  <Link to='/'>
  <button className='btn btn-danger mt-4'>Login Page</button></Link>
-  <Link to='/dashboard'>
- <button className='btn btn-primary mt-4 ms-4'>Dash Board Page</button></Link>
     </table>
     
   </div>

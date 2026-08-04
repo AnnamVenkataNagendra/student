@@ -33,11 +33,10 @@ const navigate=useNavigate();
             stuPass:""
         })
          setSuccess(true);
-        setMsg("Registration Successful!")
+        setMsg("Login Successful!")
      }).catch(error=>{
         console.log(error);
-        alert("Login faild")
-         setMsg("User register failed")
+         setMsg("User Login Failed")
         setSuccess(false);
      })
 
@@ -58,8 +57,9 @@ const navigate=useNavigate();
             <button className='btn btn-danger w-50'>Login</button>
             <h6 className='text-primary mt-3 ms-3 m-4'>New User?
             </h6>
-                        <p className={getSuccess==true? 'text-success' : 'text-danger'}>{getMsg}</p> 
-            <Link to='/post'>Create Account</Link>
+              <p className={getSuccess==true? 'text-success' : 'text-danger'}>{getMsg}</p> 
+              <Link to='/'>
+         <button className='btn btn-primary mt-4 ms-4'>Login User?</button></Link>         
           </dl>
         
     </div>

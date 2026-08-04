@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 
-const API_URL ="https://spring-5ecn.onrender.com/stu" 
+const API_URL ="https://spring-eo0l.onrender.com/stu" 
 
 class  StudentData {
   

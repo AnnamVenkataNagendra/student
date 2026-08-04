@@ -2,7 +2,7 @@
 import React, { createContext, useContext, useState } from 'react'
 
 const AuthContext=createContext(null);
-const StudentToken = ({ children }) => {
+const UserLoginToken = ({ children }) => {
 
     const [getToken, setToken]=useState(localStorage.getItem('login'));
   
@@ -20,7 +20,7 @@ const StudentToken = ({ children }) => {
 
 }
 
-export default StudentToken;
+export default UserLoginToken;
 export const userContext=()=>{
     return useContext(AuthContext);
 }
